@@ -16,9 +16,10 @@ COPY . .
 # Expose port 5000 for the Flask web application
 EXPOSE 5000
 
-# Set the environment variables for Flask
+# Set the environment variables for Flask and HF_TOKEN
 ENV FLASK_APP=app.py
 ENV FLASK_ENV=production
+ENV HF_TOKEN=${HF_TOKEN}
 
 # Run the command to start the Flask web application
 # CMD ["flask", "run", "--host=0.0.0.0"]
