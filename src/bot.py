@@ -2,9 +2,13 @@ from transformers import AutoTokenizer
 from transformers import pipeline
 import transformers
 import torch
+from huggingface_hub import login
+
+import os
 
 class LlamaBot:
     def __init__(self):
+        login(token = os.environ['HF_TOKEN'])
         self.model = "meta-llama/Llama-2-7b-chat-hf"
         self.tokenizer = AutoTokenizer.from_pretrained(self.model, use_auth_token=True)
         self.llama_pipeline = pipeline(
