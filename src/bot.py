@@ -14,7 +14,7 @@ class LlamaBot:
         self.llama_pipeline = pipeline(
             "text-generation",  # LLM task
             model=self.model,
-            torch_dtype=torch.float16,
+            torch_dtype=torch.bfloat16,
             device_map="auto",
         )
 
