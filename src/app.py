@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify
-from bot import BhagavadGitaBot
+# from bot import BhagavadGitaBot
 
 app = Flask(__name__)
-bot = BhagavadGitaBot()
+# bot = BhagavadGitaBot()
 
 @app.route('/', methods=['GET'])
 def home():
@@ -15,8 +15,8 @@ def hello():
 @app.route('/api/get-response', methods=['POST'])
 def get_response():
     user_input = request.json['user_input']
-    response = bot.get_response(user_input)
-    return jsonify({'response': response})
+    # response = bot.get_response(user_input)
+    return jsonify({'response': "response"})
 
 if __name__ == '__main__':
     # if app.config['FLASK_ENV'] == 'development':

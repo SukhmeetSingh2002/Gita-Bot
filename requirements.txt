@@ -1,4 +1,4 @@
 flask
-accelerate
-torch
-transformers
+# accelerate
+# torch
+# transformers

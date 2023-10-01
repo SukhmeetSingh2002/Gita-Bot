@@ -21,4 +21,5 @@ ENV FLASK_APP=app.py
 ENV FLASK_ENV=production
 
 # Run the command to start the Flask web application
-CMD ["flask", "run", "--host=0.0.0.0"]
+# CMD ["flask", "run", "--host=0.0.0.0"]
+CMD [ "python3", "src/app.py" ]
