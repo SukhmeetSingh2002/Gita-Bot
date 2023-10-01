@@ -39,6 +39,8 @@ jobs:
     environment:
       name: 'production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
 
     steps:
     - name: Deploy to Azure Web App
