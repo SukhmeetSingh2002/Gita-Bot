@@ -1,4 +1,5 @@
 Flask
+flask-cors
 Jinja2<=3.1.0
 accelerate
 torch

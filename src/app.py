@@ -1,12 +1,14 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from bot import BhagavadGitaBot
 
 app = Flask(__name__)
+CORS(app)
 bot = BhagavadGitaBot()
 
 @app.route('/', methods=['GET'])
 def home():
-    return jsonify({'message': 'Welcome to my Bhagavad Gita Bot!'})
+    return jsonify({'message': 'Welcome to my Bhagavad Gita Bot!!'})
 
 @app.route('/api/hello', methods=['GET'])
 def hello():
