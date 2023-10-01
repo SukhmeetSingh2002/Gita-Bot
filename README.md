@@ -36,13 +36,20 @@ This project was inspired by the teachings of The Bhagavad Gita and the work of 
 ## Docker Commands
 
 ```bash
-docker build -t my-flask-app .
-docker tag my-flask-app my-container-registry.azurecr.io/my-flask-app:v1
+docker build -t gita-bot-backend .
+docker tag gita-bot-backend gitabot.azurecr.io/gita-bot-backend:v1
 ```
 
+or
 ```bash
-docker login my-container-registry.azurecr.io
-docker push my-container-registry.azurecr.io/my-flask-app:v1
+docker build -t gitabot.azurecr.io/gita-bot-backend:v1 .
+```
+
+> Above command will build and tag the image in one go.
+
+```bash
+docker login gitabot.azurecr.io
+docker push gitabot.azurecr.io/gita-bot-backend:v1
 ```
 
 
