@@ -22,4 +22,4 @@ if __name__ == '__main__':
     # if app.config['FLASK_ENV'] == 'development':
     #     app.run(debug=True, host='0.0.0.0')
     # else:
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=80)
