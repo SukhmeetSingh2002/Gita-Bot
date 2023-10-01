@@ -1,5 +1,5 @@
 Flask
 Jinja2<=3.1.0
-# accelerate
-# torch
-# transformers
+accelerate
+torch
+transformers
