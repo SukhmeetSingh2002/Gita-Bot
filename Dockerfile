@@ -19,7 +19,7 @@ EXPOSE 5000
 # Set the environment variables for Flask and HF_TOKEN
 ENV FLASK_APP=app.py
 ENV FLASK_ENV=production
-ENV HF_TOKEN=${HF_TOKEN}
+ENV HF_TOKEN="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"
 
 # Run the command to start the Flask web application
 # CMD ["flask", "run", "--host=0.0.0.0"]
